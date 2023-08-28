@@ -3,6 +3,7 @@ package com.practice.basics;
 public class Actor {
 	public static void main(String[] args) {
 		int age = 41;
+		String industry = "Tollywood";
 		int salary = 7000000;
 		String name = "Arjun";
 		String occupation = "Actor";
@@ -14,6 +15,7 @@ public class Actor {
 		System.out.println("Aadhar number: "+aadhar);
 		System.out.println("Gender: "+gender);
 		System.out.println("Occupation: "+occupation);
+		System.out.println("Industry: "+industry);
 		System.out.println("Salary: "+salary);
 		System.out.println("Phone number: "+ph);
 		
