@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Example4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("choice a number :");
+		System.out.println("choose a number :");
 		System.out.println("Enter '1' : ");
         System.out.println("Enter '2' : ");
 		System.out.println("Enter '3' : ");
@@ -13,9 +13,9 @@ public class Example4 {
 		System.out.println("Enter '5' : ");
 		System.out.println("Enter '6' : ");
 		System.out.println("Enter '7' : ");
-		int choice = sc.nextInt();
+		int choose = sc.nextInt();
 
-		switch (choice) {
+		switch (choose) {
 		case 1:
 			System.out.println("monday");
 			break;
@@ -39,7 +39,7 @@ public class Example4 {
 			System.out.println("sunday");
 			break;
 		default:
-			System.out.println("you choice wrong number ");
+			System.out.println("you choose wrong number ");
 
 			sc.close();
 
@@ -48,3 +48,4 @@ public class Example4 {
 	}
 
 }
+
