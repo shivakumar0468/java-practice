@@ -31,7 +31,17 @@ public class ComparisionOperator {
 		guess += "come";
 		System.out.println("guess :"+guess);
 
-		//note: +operator does both addition and concatination. this is called as operator overloading 
+		//note: +operator does both addition and concatination. this is called as operator overloading
+		
+		String fruit = "apple";
+		String fruit2 = "apple";
+		//String fruit = new String("apple");
+		//String fruit2 = new String("apple");
+		boolean result = fruit==fruit2;
+		boolean result2 = fruit!=fruit2;
+		System.out.println(result);
+		System.out.println(result2);
+		
 	}
 
 }
