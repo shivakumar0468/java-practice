@@ -1,8 +1,17 @@
 package com.practice.programs.beginner;
 
 import java.util.Scanner;
-
-public class Lcm {
+/*
+ * 18. Write a program to find the LCM of two numbers.
+	Input:
+	Enter the first number: 4
+	Enter the second number: 6
+	Output:
+	The LCM of 4 and 6 is: 12
+	lcm=a*b/gcd(a,b)=4*6/2=12
+	lcm=12*18/6=36
+ */
+public class Lcm {//least common multiple
 	public static void main(String args[]) {
 		int a, b, max, step, lcm = 0;
 		Scanner sc = new Scanner(System.in);
