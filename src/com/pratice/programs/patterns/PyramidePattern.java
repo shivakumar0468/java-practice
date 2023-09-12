@@ -24,19 +24,18 @@ public class PyramidePattern {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the no of rows: ");
-		int n =sc.nextInt();
-		
-		for(int i=0;i<n;i++) {//Navigate to next line
-			for(int j =0;j<n-1-i;j++) {// print spaces
-				System.out.print(" ");//print spaces in same row
+		int n = sc.nextInt();
+
+		for (int i = 0; i < n; i++) {// Navigate to next line
+			for (int j = 0; j < n - 1 - i; j++) {// print spaces
+				System.out.print(" ");// print spaces in same row
 			}
-			for(int k=0;k<2*i+1;k++) {// print stars in same line
+			for (int k = 0; k < 2 * i + 1; k++) {// print stars in same line
 				System.out.print("*");
 			}
 			System.out.println();
 		}
 		sc.close();
-		
 	}
 
 }
