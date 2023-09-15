@@ -1,5 +1,12 @@
 package com.pratice.programs.patterns;
+/*
+ * 1
+   22
+   333
+   4444
+   55555
 
+ */
 import java.util.Scanner;
 
 public class Example2 {

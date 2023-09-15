@@ -19,8 +19,8 @@ public class DiagonalPattern {
 		System.out.println("Enter the no of rows:");
 		int n = sc.nextInt();
 
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
+		for (int i = 1; i <=n; i++) {
+			for (int j = 1; j <=n; j++) {
 				if (i == j) {
 					System.out.print(i + "");
 				} else {
