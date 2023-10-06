@@ -12,28 +12,27 @@ import java.util.Scanner;
 	lcm=12*18/6=36
  */
 public class Lcm {//least common multiple
-	public static void main(String args[]) {
-		int a, b, max, step, lcm = 0;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter first number ::");
-		a = sc.nextInt();
-		System.out.println("Enter second number ::");
-		b = sc.nextInt();
-
-		if (a > b) {
-			max = step = a;
-		} else {
-			max = step = b;
-		}
-
-		while (a != 0) {
-			if (max % a == 0 && max % b == 0) {
-				lcm = max;
-				break;
+	public int leastNumber(int num1, int num2) {
+		int hcf = 0, lcm = 0;
+		for (int i = 1; i <= num1 || i <= num2; i++) {// i<=4||i<=6->i<=6
+			if (num1 % i == 0 && num2 % i == 0) {// check whether remainder is 0 or not for both numbers
+				hcf = i;// store temporary HCF
 			}
-			max += step;
 		}
-		System.out.println("LCM of given numbers is :: " + lcm);
+		lcm = num1 * num2 / hcf;
+		return lcm;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the first number : ");
+		int num1 = sc.nextInt();
+		System.out.println("Enter the second number : ");
+		int num2 = sc.nextInt();
+		Lcm obj = new Lcm();
+		int lcm = obj.leastNumber(num1, num2);
+
+		//System.out.println("HCF of given two numbers is :" + hcf);
+		System.out.println("lcm of "+num1+" and "+num2+" is : " + lcm);
 		sc.close();
 
 	}
