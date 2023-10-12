@@ -11,7 +11,7 @@ public class ArmstsrongNumber {
 		number = n;
 		while (number != 0) {
 			remainder = number % 10;
-			result += Math.pow(remainder, 3);
+			result += Math.pow(remainder, 4);
 			number = number / 10;
 
 		}
