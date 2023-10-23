@@ -14,11 +14,7 @@ Output:
 import java.util.Scanner;
 
 public class DiagonalPattern {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the no of rows:");
-		int n = sc.nextInt();
-
+	public void shape(int n) {
 		for (int i = 1; i <=n; i++) {
 			for (int j = 1; j <=n; j++) {
 				if (i == j) {
@@ -29,6 +25,15 @@ public class DiagonalPattern {
 			}
 			System.out.println();
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the no of rows:");
+		int n = sc.nextInt();
+		DiagonalPattern obj = new DiagonalPattern();
+		obj.shape(n);
+
+		
 		sc.close();
 	}
 }

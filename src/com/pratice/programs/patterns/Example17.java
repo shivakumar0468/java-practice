@@ -1,6 +1,7 @@
 package com.pratice.programs.patterns;
 
 import java.util.Scanner;
+
 /*
  *  12345
 	 2345
@@ -15,11 +16,7 @@ import java.util.Scanner;
 
  */
 public class Example17 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the no of rows: ");
-		int n = sc.nextInt();
-
+	public void shape(int n) {
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j < i; j++) {
 				System.out.print(" ");
@@ -40,6 +37,14 @@ public class Example17 {
 			System.out.println();
 
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the no of rows: ");
+		int n = sc.nextInt();
+
+		Example17 obj = new Example17();
+		obj.shape(n);
 		sc.close();
 	}
 

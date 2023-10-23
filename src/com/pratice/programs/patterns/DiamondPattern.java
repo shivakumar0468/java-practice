@@ -3,11 +3,7 @@ package com.pratice.programs.patterns;
 import java.util.Scanner;
 
 public class DiamondPattern {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the no of rows:");
-		int n = sc.nextInt();
-
+	public void shape(int n) {
 		for (int i = 0; i <n; i++) {
 			for (int j = n; j > i; j--) {
 				System.out.print(" ");
@@ -29,6 +25,15 @@ public class DiamondPattern {
 			}
 			System.out.println();
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the no of rows:");
+		int n = sc.nextInt();
+		DiamondPattern obj = new DiamondPattern();
+		obj.shape(n);
+
+		
 		sc.close();
 	}
 }

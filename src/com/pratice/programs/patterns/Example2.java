@@ -1,4 +1,5 @@
 package com.pratice.programs.patterns;
+
 /*
  * 1
    22
