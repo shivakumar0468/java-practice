@@ -1,7 +1,13 @@
 package com.pratice.programs.patterns;
 
 import java.util.Scanner;
-
+/*
+ *  1 
+	2 6 
+	3 7 10 
+	4 8 11 13 
+	5 9 12 14 15 
+ */
 public class Example27 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
