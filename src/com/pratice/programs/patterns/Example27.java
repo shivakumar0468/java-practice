@@ -9,10 +9,7 @@ import java.util.Scanner;
 	5 9 12 14 15 
  */
 public class Example27 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the no of rows: ");
-		int n = sc.nextInt();
+	public void shape(int n) {
 		int  k=1;
 
 		for (int i =1;i<=n;i++) {
@@ -24,6 +21,13 @@ public class Example27 {
 			}
 			System.out.println();
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the no of rows: ");
+		int n = sc.nextInt();
+		Example27 obj = new Example27();
+		obj.shape(n);
 		sc.close();
 	}
 

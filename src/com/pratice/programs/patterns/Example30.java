@@ -15,11 +15,7 @@ import java.util.Scanner;
 
  */
 public class Example30 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the no of rows: ");
-		int n = sc.nextInt();
-
+	public void shape(int n) {
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (j % 2 == 0) {
@@ -31,6 +27,14 @@ public class Example30 {
 			}
 			System.out.println("\n");
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the no of rows: ");
+		int n = sc.nextInt();
+
+		Example30 obj = new Example30();
+		obj.shape(n);
 
 		sc.close();
 	}
