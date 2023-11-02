@@ -16,20 +16,27 @@ ArrayList after removing all occurrences of element 30: [20,10,50,45,60]
  */
 public class RemoveAllOccurence {
 	public static void main(String[] args) {
-		//ArrayList arraylist = new ArrayList();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number of elements:");
 		int n = sc.nextInt();
 		System.out.println("Enter the array elements:");
-		ArrayList arraylist = new ArrayList();
+		ArrayList list = new ArrayList();
 		for(int i=0;i<n;i++) {
-			arraylist.add(sc.nextInt());
+			list.add(sc.nextInt());
 		}
 		System.out.println("Element to remove:");
-		int m = sc.nextInt();
+		int element = sc.nextInt();
 		
-		arraylist.remove(n==m);
-		System.out.println(arraylist);
+		
+		System.out.println(list);
+		System.out.println(list);
+		for (int i = 0; i < list.size(); i++) {
+			if((int)list.get(i)==element) {
+				list.remove(i);
+			}
+		}
+		System.out.println(list);
+		sc.close();
 		
 			
 	}
