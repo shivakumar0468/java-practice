@@ -23,12 +23,17 @@ public class RemoveAllElementsInLinkedList {
 		}
 		System.out.println("Enter the value: ");
 		int value = sc.nextInt();
-		 for(int j=0;j<list.size();j++) {
-			 int currentValue =(int) list.get(j);
-			 //if(listvalue) {
-				 System.out.println(list);
-			 //}
+		LinkedList list2=new LinkedList();
+		
+		 for (Object object : list) {
+			int currentValue= (int) object ;
+			 if(currentValue<=value) {
+			 list2.add(currentValue);
+			 }
+			 
 		 }
+		 System.out.println(list2);
+		 
 		
 			sc.close();
 	}

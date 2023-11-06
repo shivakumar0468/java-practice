@@ -19,14 +19,20 @@ public class ReverseLinkedList {
 		int n = sc.nextInt();
 		System.out.println("enter the elements of the LinkedList: ");
 		LinkedList list = new LinkedList();
-		for(int i=0;i<n;i++) {
+		for (int i = 0; i < n; i++) {
 			list.add(sc.nextInt());
-			
+
 		}
-		Collections.reverse(list);
 		System.out.println(list);
+		LinkedList list2 = new LinkedList();
+		for (int k = list.size() - 1; k >= 0; k--) {
+			int reverse = (int) list.get(k);
+			list2.add(reverse);
+		}
+		// Collections.reverse(list);
+		 System.out.println(list2);
 		sc.close();
-		
+
 	}
 
 }
