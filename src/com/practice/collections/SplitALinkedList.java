@@ -36,7 +36,6 @@ public class SplitALinkedList {
 		System.out.println("LinkedList1: "+linkedlist1);
 		System.out.println("LinkedList2: "+linkedlist2);
 		sc.close();
-		
 	}
 
 }
