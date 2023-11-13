@@ -14,31 +14,37 @@ ArrayList1 after adding all elements from ArrayList 2: [50,70,90]
 public class SumElement {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the size of the ArrayList: ");
+		System.out.println("enter the size of  ArrayList 1: ");
 		int size = sc.nextInt();
-		System.out.println("Enter the elements of the Arraylist: ");
-		ArrayList arrayList1 = new ArrayList();
+		System.out.println("Enter the elements: ");
+		ArrayList list1 = new ArrayList();
 		for (int i = 0; i < size; i++) {
-			arrayList1.add(sc.nextInt());
+			list1.add(sc.nextInt());
 		}
-		System.out.println("Enter the size of the ArrayList2: ");
+		System.out.println(list1);
+
+		System.out.println("enter the size of  ArrayList 2: ");
 		int size2 = sc.nextInt();
-		System.out.println("Enter the elements of the ArrayList2: ");
-		ArrayList arrayList2 = new ArrayList();
-		for (int j = 0; j < size2; j++) {
-			arrayList2.add(sc.nextInt());
+		System.out.println("Enter the elements: ");
+		ArrayList list2 = new ArrayList();
+		for (int i = 0; i < size2; i++) {
+			list2.add(sc.nextInt());
 		}
-		if (size != size2) {
+		System.out.println(list2);
+
+		if (list1.size() != list2.size()) {
 			System.out.println("Arraylists are not of the same size");
 			return;
 		}
-		for (int i = 0; i < arrayList1.size(); i++) {
-			int sum = (int) arrayList1.get(i) + (int) arrayList2.get(i);
-			// arrayList1.set(i, sum);
-			System.out.println(sum);
+		ArrayList sumList = new ArrayList();
+		for (int i = 0; i < list1.size(); i++) {
+			int sum = (int) list1.get(i) + (int) list2.get(i);
+			sumList.add(sum);
 		}
-
-		// System.out.println(arrayList1);
+		System.out.println("arraylist1: " + list1);
+		System.out.println("arraylist2: " + list2);
+		System.out.println("ArrayList1 after adding all elements from ArrayList 2: " + sumList);
+		sc.close();
 	}
 
 }
